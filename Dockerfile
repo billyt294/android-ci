@@ -18,6 +18,10 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 
+RUN echo "deb https://dl.bintray.com/sobolevn/deb git-secret main" | tee -a /etc/apt/sources.list
+RUN wget -qO - https://api.bintray.com/users/sobolevn/keys/gpg/public.key | apt-key add -
+RUN apt-get update && apt-get install -y gawk git-secret
+
 RUN apt-get install -qqy --no-install-recommends \
       bzip2 \
       git \
