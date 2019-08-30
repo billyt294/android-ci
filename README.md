@@ -1,4 +1,4 @@
-# Android CI [![Android CI on Docker Hub](https://img.shields.io/docker/automated/code0987/android-ci.svg)](https://store.docker.com/community/images/code0987/android-ci)
+# Android CI [![Android CI on Docker Hub](https://img.shields.io/docker/cloud/automated/code0987/android-ci.svg)](https://store.docker.com/community/images/code0987/android-ci)
 
 An image for building Android apps with support for multiple SDK Build Tools. This Docker image contains the Android SDK and most common packages necessary for building Android apps in a CI tool. 
 
