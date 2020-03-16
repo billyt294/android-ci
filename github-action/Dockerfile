@@ -1,4 +1,4 @@
-FROM ./Dockerfile
+FROM ../Dockerfile
 
 LABEL "com.github.actions.name"="Android CI"
 LABEL "com.github.actions.description"="Build Android projects"
